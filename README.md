@@ -76,8 +76,8 @@ Fork the repository, make changes, and submit a pull request.
 
 **Muhammad Shaharyar**
 Laravel Developer
-📧 Email: [your-email@example.com](mailto:muhammadshaharyaraulakh@gmail.com)
-🔗 GitHub: [https://github.com/your-username](https://github.com/muhammadshaharyaraulakh)
+📧 Email: [muhammadshaharyaraulakh@gmail.com](mailto:muhammadshaharyaraulakh@gmail.com)
+🔗 GitHub: [[https://github.com/your-username](https://github.com/muhammadshaharyaraulakh)](https://github.com/muhammadshaharyaraulakh)
 
 
 ⭐ If you like this project, don’t forget to **star the repository**!
