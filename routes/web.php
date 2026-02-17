@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('signup', function () {
     return view('authentication.signup');
 });
+Route::get('login', function () {
+    return view('authentication.login');
+});
