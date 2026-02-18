@@ -38,7 +38,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 ">
 
     <nav class="bg-white py-4 px-6 md:px-12 flex items-center justify-between relative z-50 shadow-sm">
         <a href="#" class="flex items-center gap-2 cursor-pointer text-decoration-none">
