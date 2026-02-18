@@ -164,28 +164,6 @@
         </div>
     </main>
 
-    <script>
-        // Mobile Menu Toggle
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
 
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        // Password Show/Hide Toggle
-        function togglePassword() {
-            const passwordInput = document.getElementById('passwordInput');
-            const toggleBtn = event.currentTarget; // The button that was clicked
-            
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                toggleBtn.textContent = 'Hide';
-            } else {
-                passwordInput.type = 'password';
-                toggleBtn.textContent = 'Show';
-            }
-        }
-    </script>
 </body>
 </html>
