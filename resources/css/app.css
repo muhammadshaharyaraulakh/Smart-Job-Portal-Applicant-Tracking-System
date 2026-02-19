@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -6,44 +6,103 @@
 @source '../**/*.js';
 
 @theme {
-  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans:
+        "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  --color-brand-purple: #6b21a8;
-  --color-brand-light: #f3e8ff;
+    --color-brand-purple: #6b21a8;
+    --color-brand-light: #f3e8ff;
 }
-a{
-  text-decoration: none;
+a {
+    text-decoration: none;
 }
-i{
-  color:#6b21a8;
+i {
+    color: #6b21a8;
 }
 .checkbox-custom:checked {
-  background-color: var(--color-brand-purple);
-  border-color: var(--color-brand-purple);
+    background-color: var(--color-brand-purple);
+    border-color: var(--color-brand-purple);
 }
+
+.custom-checkbox {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25em;
+    display: grid;
+    place-content: center;
+    transition: 0.2s all;
+}
+
+.custom-checkbox::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em white;
+    transform-origin: center;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.custom-checkbox:checked {
+    background-color: #6b21a8;
+    border-color: #6b21a8;
+}
+
+.custom-checkbox:checked::before {
+    transform: scale(1);
+}
+
+/* Smooth transition for height changes */
+.filter-content {
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.filter-content.collapsed {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+}
+.filter-content.expanded {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 0.75rem;
+}
+
+.rotate-icon {
+    transition: transform 0.3s ease;
+}
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
 @media (max-width: 839px) {
-  .desktop-links,
-  .desktop-buttons {
-    display: none;
-  }
-  #mobile-menu-btn {
-    display: block;
-  }
-  #mobile-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
+    .desktop-links,
+    .desktop-buttons {
+        display: none;
+    }
+    #mobile-menu-btn {
+        display: block;
+    }
+    #mobile-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 @media (min-width: 840px) {
-  #mobile-menu-btn {
-    display: none;
-  }
-  .desktop-links,
-  .desktop-buttons {
-    display: flex;
-  }
+    #mobile-menu-btn {
+        display: none;
+    }
+    .desktop-links,
+    .desktop-buttons {
+        display: flex;
+    }
 }
-

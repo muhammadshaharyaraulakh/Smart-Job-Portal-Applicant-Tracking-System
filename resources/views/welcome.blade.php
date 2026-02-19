@@ -279,77 +279,9 @@
             <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 grayscale-0 transition-all duration-500">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="h-8 md:h-10" alt="Google">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" class="h-8 md:h-10" alt="Microsoft">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Flipkart_logo.svg/1200px-Flipkart_logo.svg.png" class="h-8 md:h-10 object-contain" alt="Flipkart">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" class="h-6 md:h-8" alt="YouTube">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" class="h-6 md:h-8" alt="IBM">
             </div>
         </div>
     </section>
-
-    <footer class="bg-purple-50 pt-16 pb-8 px-6 md:px-12 border-t border-purple-100">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-                
-                <div>
-                    <div class="flex items-center gap-2 mb-6">
-                        <i class="fa-solid fa-magnifying-glass text-brand-purple text-xl"></i>
-                        <span class="text-xl font-bold text-brand-purple">AlwaysApply</span>
-                    </div>
-                    <div class="text-sm text-gray-500 space-y-2">
-                        <p>Call now: <span class="font-semibold text-brand-purple">+91 9591776078</span></p>
-                        <p class="leading-relaxed mt-2">456 Chandni Chowk Street, Near Red Fort, Old Delhi, New Delhi, Delhi 110006, India</p>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="font-bold text-brand-purple mb-4">Quick Link</h4>
-                    <ul class="space-y-2 text-sm text-gray-500">
-                        <li><a href="#" class="hover:text-brand-purple">About</a></li>
-                        <li><a href="#" class="hover:text-brand-purple">Contact</a></li>
-                        <li><a href="#" class="hover:text-brand-purple">Admin</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="font-bold text-brand-purple mb-4">Candidate</h4>
-                    <ul class="space-y-2 text-sm text-gray-500">
-                        <li><a href="#" class="hover:text-brand-purple">Browse Jobs</a></li>
-                        <li><a href="#" class="hover:text-brand-purple">Browse Employers</a></li>
-                        <li><a href="#" class="hover:text-brand-purple">Candidate Dashboard</a></li>
-                        <li><a href="#" class="hover:text-brand-purple">Saved Jobs</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="font-bold text-brand-purple mb-4">Employers</h4>
-                    <ul class="space-y-2 text-sm text-gray-500">
-                        <li><a href="#" class="hover:text-brand-purple">Post a Job</a></li>
-                        <li><a href="#" class="hover:text-brand-purple">Browse Candidates</a></li>
-                        <li><a href="#" class="hover:text-brand-purple">Employers Dashboard</a></li>
-                        <li><a href="#" class="hover:text-brand-purple">Applications</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-purple-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-xs text-gray-500">@ 2022 AlwaysApply - Job Portal. All rights Reserved</p>
-                <div class="flex gap-4 text-brand-purple/70">
-                    <a href="#" class="hover:text-brand-purple"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="hover:text-brand-purple"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" class="hover:text-brand-purple"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="hover:text-brand-purple"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>
+<x-footer />

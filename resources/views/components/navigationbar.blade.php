@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-gray-50 text-gray-800 ">
-<nav class="bg-white py-4 px-6 md:px-12 flex flex-wrap items-center justify-between relative z-50 shadow-sm">
+<nav class="bg-white py-4 px-6 md:px-12 flex flex-wrap items-center justify-between relative z-50">
   <div class="flex items-center gap-2 cursor-pointer flex-shrink-0">
       <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11.5149 11.9536H11.5206M13.8081 8.36752V7.17216C13.8081 6.85513 13.6873 6.55109 13.4723 6.32692C13.2572 6.10275 12.9656 5.97681 12.6615 5.97681H10.3682C10.0641 5.97681 9.77248 6.10275 9.55745 6.32692C9.34241 6.55109 9.22161 6.85513 9.22161 7.17216V8.36752M17.248 12.5513C15.5468 13.7221 13.5533 14.3463 11.5149 14.3463C9.47642 14.3463 7.48287 13.7221 5.78174 12.5513M6.92836 8.36752H16.1013C16.7346 8.36752 17.248 8.9027 17.248 9.56287V15.5396C17.248 16.1998 16.7346 16.735 16.1013 16.735H6.92836C6.2951 16.735 5.78174 16.1998 5.78174 15.5396V9.56287C5.78174 8.9027 6.2951 8.36752 6.92836 8.36752Z" stroke="#6300B3" stroke-width="1.00962" stroke-linecap="round" stroke-linejoin="round"/>
@@ -54,8 +54,8 @@
       <i class="fa-solid fa-bars"></i>
   </button>
 </nav>
-<div id="mobile-menu" class="hidden flex-col bg-white border-t p-4 md:hidden w-full z-40 shadow-lg
-     transition-all duration-300 ease-in-out origin-top scale-y-0">
+<div id="mobile-menu" class="hidden flex-col bg-white  p-4 md:hidden w-full z-40 shadow-lg
+     transition-all duration-3000 ease-in-out origin-top scale-y-0">
    <a href="/" class="hover:text-brand-purple transition">Home</a>
       <a href="{{route('jobs')}}" class="hover:text-brand-purple transition">Find Jobs</a>
       <a href="{{route('profile')}}" class="hover:text-brand-purple transition">Profile</a>
