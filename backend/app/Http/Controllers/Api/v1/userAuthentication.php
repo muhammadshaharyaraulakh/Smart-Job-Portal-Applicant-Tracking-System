@@ -66,4 +66,25 @@ class userAuthentication extends Controller
             'user' => $user 
         ], 200);    
     }
+    public function login(Request $request)
+    {
+        $validation = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
+        $user = User::where('email', $validation['email'])->first();
+        if (!$user || !Hash::check($validation['password'], $user->password)) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Invalid email or password.'
+            ], 401);
+        }
+        $token = $user->createToken('auth_token')->plainTextToken;
+        return response()->json([
+            'success' => true,
+            'message' => 'User logged in successfully',
+            'token' => $token,
+            'user' => $user 
+        ], 200);    
+    }
 }
